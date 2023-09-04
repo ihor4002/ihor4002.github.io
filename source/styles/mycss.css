@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Tinos&display=swap');
+
+
+body {
+	font-family: Tinos, serif;
+	background: linear-gradient(90deg, #F9E749 0%, #FF6C88 96%, #fff 100%);
+}
+
+.navbar-nav .nav-link {
+	color: #ee35ee;
+}
+
+.navbar-brand img {
+	width: 100px;
+}
+
+.card {
+	background: linear-gradient(270deg, #F9E749 0%, #FF6C88 96%, #fff 100%);
+
+}
+
+.card a {
+	color: yellow;
+	background: violet;
+	border-color: violet;
+}
+
+.card a:hover {
+	color: red;
+	background: purple;
+	border-color: purple;
+}
+
+.slide-text {
+	color: #0000ff;
+	margin: auto auto;
+}
+
+footer {
+	background: #ffffff;
+}
+
+.footer-text {
+	color: #ee35ee;
+	margin: auto auto;
+}
+
+.media-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.call-anim {
+	animation: callAnim 2s ease 0s infinite normal forwards;
+}
+
+@keyframes callAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+@media (max-width: 755px) {
+	.carousel-indicators {
+		display: none;
+	}
+}
